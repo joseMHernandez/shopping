@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%
+}
+
+.navbar {
+    background-color: rgba(202, 202, 189, 0.1);
+}
+
+nav img {
+   height: 6rem;
+   margin-right: 3rem;
+}
+
+
+
+nav .nav-item .nav-link {
+    font-size: 1.5rem;
+    color: rgba(0,0,0, 1);
+}
+
+form .form-control, .btn {
+    font-size: 1.5rem;
+}
+form .btn {
+    font-size: 1.2rem;
+}
+
+#inicio {
+    padding: 3rem 2rem;
+    display: flex;
+    
+}
+
+
+
+
+section img {
+    height: 30rem;
+   
+   
+}
+
+
+section span {
+    font-size: 1.4rem;
+}
+section p {
+    font-size: 1.5rem;
+    color: black;
+}
+
+section h2 {
+   padding: 3rem;
+   font-size: 3rem;
+}
+
+section .btn {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    box-shadow: rgba(241, 241, 238, 0.1);
+  
+}
+
+section .box-1, .box-2, .box-3{
+    padding: 3rem;
+text-align: center;
+background-color: rgba(202, 202, 189, 0.1);
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+   padding: 4rem 3rem;
+  
+   text-align: center;
+   
+}
+
+
+
+
+
+
+.one {
+    background-color: rgba(202, 202, 189, 0.1);
+}
+.one .btn {
+   box-shadow: rgba(202, 202, 189, 0.1);
+   padding: 1rem 3rem;
+}
+
+
+.two {
+    background-color: rgba(202, 202, 189, 0.1);  
+}
+
+.two .btn {
+    box-shadow: rgba(202, 202, 189, 0.1);
+    margin: 1rem;
+    padding: 1rem 3rem;
+}
+
+.three {
+    background-color: rgba(202, 202, 189, 0.1);
+}
+
+.three .btn {
+    box-shadow: rgba(202, 202, 189, 0.1);
+    margin: 1rem;
+    padding: 1rem 3rem;
+}
+
+
+
+#productos h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin: 4rem;
+    
+}
+
+#nosotros{ height: 80vh;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+     url(./img/nosotros.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+  padding: 20rem 4rem ;
+ 
+  
+ 
+     background-size: cover;
+}
+
+#nosotros h2, p {
+    color: rgba(255, 255, 255, 0.9)
+}
+#nosotros h2 {
+    font-size: 3rem;
+    
+}
+#nosotros p {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+#nosotros .btn {
+   padding: 1rem 4rem;
+   color: rgba(0, 0, 0, 1);
+
+    
+}
+
+
+#contacto {
+
+height: 20vh;
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+#contacto ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+   
+
+    color:  white;
+    font-size: 5rem;
+    }
+    
+
+    #contacto ul li {
+        list-style: none;
+      
+        
+        }
+        
+
+
+@media screen and (max-width: 525px ){
+    section span {
+        display: none;
+    }
+    section .box-3 img{
+width: 28rem;
+    }
+
+
+
+    
+    
+    
+    
+}
+
+@media screen and (max-width: 880px){
+
+    .wrapper {
+        display: grid;
+        grid-template-areas: "one one one"
+                            "two two two"
+                            "three three three";
+                           padding: 4rem;
+
+                            
+    }
+    
+        .one {
+            
+            grid-area: one;
+           
+        }
+        
+        .two {
+            grid-area: two;
+           
+        }
+        
+    
+        
+        .three {
+           
+        grid-area: three;
+        }
+        
+
+
+}
